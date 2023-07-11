@@ -1,0 +1,12 @@
+body {
+    margin: 0px;
+    overflow-x: hidden;
+    background-position: top;
+}
+.header-container {
+    display: flex;
+    background: url("main-page.png");
+    width: 1920px;
+    height: 1000px;
+    background-position: top;
+}
