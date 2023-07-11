@@ -11,7 +11,7 @@ body {
     .header-container {
         display: flex;
         flex-wrap: wrap;
-        background: url("header ( chapter_1 )/main-page.png") no-repeat;                  /*Картинка заднего фона*/
+        background: url("img/header ( chapter_1 )/main-page.png") no-repeat;                  /*Картинка заднего фона*/
         background-position: top center;          /* Размещение картинки по центру экрана брраузера */
                                                   /* И так же важное примечание: чтобы это работало нужно:*/
                                                   /* Подключить картинку через "background: url() no-repeat"*/
