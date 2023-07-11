@@ -1,12 +1,129 @@
 body {
-    margin: 0px;
-    overflow-x: hidden;
-    background-position: top;
+    margin: 0px;  /*Внешние отступы = 0 для всего*/
 }
-.header-container {
+@font-face {
+    font-family: "Archangelsk";
+    font-style: normal ;
+    font-weight: auto;                    /*Подключение шрифта "Archangelsk"*/
+    src: local(Archangelsk);
+    src: url("fonts/ofont.ru_Archangelsk.ttf");
+}
+    .header-container {
+        display: flex;
+        flex-wrap: wrap;
+        background: url("header ( chapter_1 )/main-page.png") no-repeat;                  /*Картинка заднего фона*/
+        background-position: top center;          /* Размещение картинки по центру экрана брраузера */
+                                                  /* И так же важное примечание: чтобы это работало нужно:*/
+                                                  /* Подключить картинку через "background: url() no-repeat"*/
+                                                  /* И убрать widght*/
+        height: 1000px;
+
+    }
+            .cyberpunk-logo {
+                margin-top: 30px;
+                margin-left: 160px;      /*Настройки для логотипа Киберпанка*/
+                margin-right: 500px;
+            }
+
+                .header-block {
+                    margin-top: 50px;        /*Настройка отступов между остальными логотипами и сверху от них*/
+                    margin-left: 30px;
+                }
+.rectangle{
     display: flex;
-    background: url("main-page.png");
-    width: 1920px;
-    height: 1000px;
-    background-position: top;
+    flex-direction: column;
+    width: 624px;
+    height: 369px;
+    flex-shrink: 0;                         /*Настройки для жёлтого прямоугольника*/
+    background-color: #F8F200;
+    margin-top: 527px;
+    margin-left: 760px;
+    /*clip-path: polygon(50% 0,100% 50%, 50% 100%, 0 50%); Разобраться и сделать обрезку!!!!!  */
 }
+                .rectangle-text {
+                    font-family: Archangelsk;
+                    color: #000;
+                    font-size: 62px;
+                    font-style: normal;
+                    font-weight: 400;             /*Настройки для заголока жёлтого прямоугольника*/
+                    line-height: normal;
+                    margin-top: 70px;
+                    margin-left: 70px;
+                }
+                    .rectangle-button {
+                        background-color: #000;
+                        display: inline-flex;
+                        padding: 19px 50px;
+                        align-items: center;
+                        gap: 10px;
+                        width: 172px;                   /*Настройки для кнопки большого прямоугольника*/
+                        height: 40px;
+                        margin-left: 70px;
+                        margin-top: 40px;
+                    }
+                        .rectangle-button-text {
+                            color: #F8F200;
+                            text-align: center;
+                            font-size: 24px;
+                            font-style: normal;            /*Настройки для текста кнопки большого прямоугольника*/
+                            font-weight: 700;
+                            line-height: 40px;
+                            width: 172px;
+                            height: 40px;
+                        }
+
+
+/*-------------------------------------КОНЕЦ HEADER---------------------------------------------*/
+
+
+.main1-container {
+    display: flex;
+    flex-direction: column;        Настройки для главного контейнера первой части мэйна
+    height: 847px;
+    flex-shrink: 0;
+    background-color: #FFF;
+}
+                    .Nait-siti {
+                        color: #000;
+                        font-family: Archangelsk;
+                        font-size: 62px;
+                        font-style: normal;
+                        font-weight: 400;            /*Настройки для заголока главного контейнера первой части */
+                        line-height: normal;
+                        margin-top: 70px;
+                        margin-left: 50px;
+                        margin-bottom: 0px;
+                    }
+                    .Cyber2077{
+                        color: #52BEDC;
+                        font-family: Roboto;
+                        font-size: 18px;
+                        font-style: normal;            /*Настройки для синего текста главного контейнера первой части*/
+                        font-weight: 700;
+                        line-height: 34px;
+                    }
+                    .more-text {
+                        color: #777777;
+                        font-family: Roboto;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 700;            /*Настройки для остального текста главного контейнера первой части*/
+                        line-height: 34px;
+                        margin-left: 50px;
+                        margin-top: 25px;
+                    }
+.img-container {
+    display: flex;
+    flex-direction: row;        /*Настройки для главного контейнера с картинками первой части*/
+    margin-left: 50px;
+    margin-top: 70px;
+}
+            .img-pod-container{
+                display: flex;          /*Настройки для подконтейнера с картинками первой части*/
+                flex-direction: column;
+            }
+
+                        .img-group {
+                            margin: 16px;        /*Настройка отступов между картинками*/
+                        }
+/*-------------------------------------КОНЕЦ ПЕРВОЙ ЧАСТИ MAIN---------------------------------------------*/
